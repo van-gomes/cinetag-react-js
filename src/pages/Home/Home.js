@@ -2,7 +2,7 @@ import Banner from "components/Banner/Banner";
 import Title from "components/Title/Title";
 import Card from "components/Card/Card";
 import styles from "./Home.module.css";
-import videos from "@/json/db.json";
+import videos from "json/db.json";
 
 function Home() {
   return (
