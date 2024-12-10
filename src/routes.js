@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Favorite from "./components/Favorite/Favorite";
+import Favorite from "./pages/Favorite/Favorite";
 import Footer from "components/Footer/Footer";
 import Cabecalho from "components/Cabecalho/Cabecalho";
 import Container from "components/Container/Container";
