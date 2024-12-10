@@ -5,6 +5,16 @@ import styles from "./Home.module.css";
 import videos from "json/db.json";
 
 function Home() {
+  // const [videos, setVideos] = useState([]);
+
+  //   useEffect(() => {
+  //       fetch('https://my-json-server.typicode.com/monicahillman/cinetag-api/videos')
+  //           .then(resposta => resposta.json())
+  //           .then(dados => {
+  //               setVideos(dados)
+  //           })
+  //   }, []);
+
   return (
     <div>
       <>

@@ -6,6 +6,17 @@ import styles from "./Player.module.css";
 import NaoEncontrada from "pages/NaoEncontrada";
 
 function Player() {
+    // const [video, setVideo] = useState();
+    // const parametros = useParams();
+
+    // useEffect(() => {
+    //     fetch(`https://my-json-server.typicode.com/monicahillman/cinetag-api/videos?id=${parametros.id}`)
+    //         .then(resposta => resposta.json())
+    //         .then(dados => {
+    //             setVideo(...dados)
+    //         })
+    // }, []);
+
     const parametros = useParams();
     const video = videos.find((video) => {
         return video.id === Number(parametros.id);
