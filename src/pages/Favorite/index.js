@@ -1,7 +1,7 @@
 import { useFavoritoContext } from "context/FavoritosContext";
-import Banner from "components/Banner/Banner";
-import Title from "components/Title/Title";
-import Card from "components/Card/Card";
+import Banner from "components/Banner";
+import Title from "components/Title";
+import Card from "components/Card";
 import styles from "./Favorite.module.css";
 
 function Favoritos() {
