@@ -8,10 +8,10 @@ export default function FavoritosProvider({ children }) {
 
     return (
         <FavoritosContext.Provider
-        value={{favorito, setFavorito }}>
+            value={{ favorito, setFavorito }}>
             {children}
         </FavoritosContext.Provider>
-    );
+    )
 }
 
 export function useFavoritoContext() {
