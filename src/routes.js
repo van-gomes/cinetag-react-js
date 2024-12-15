@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Favorite from "./pages/Favorite";
-import Player from "pages/Player";
-import NaoEncontrada from "pages/NaoEncontrada";
-import PaginaBase from "pages/BasePage";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Favorite from './pages/Favorite';
+import Player from 'pages/Player';
+import NaoEncontrada from 'pages/NaoEncontrada';
+import PaginaBase from 'pages/BasePage';
 
 function AppRoutes() {
     return (

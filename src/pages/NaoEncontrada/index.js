@@ -1,4 +1,4 @@
-import styles from "./NaoEncontrada.module.css";
+import styles from './NaoEncontrada.module.css';
 
 function NaoEncontrada() {
     return (

@@ -1,8 +1,8 @@
-import Banner from "components/Banner";
-import Title from "components/Title";
-import Card from "components/Card";
-import styles from "./Home.module.css";
-import videos from "json/db.json";
+import Banner from 'components/Banner';
+import Title from 'components/Title';
+import Card from 'components/Card';
+import styles from './Home.module.css';
+import videos from 'json/db.json';
 
 function Home() {
   // const [videos, setVideos] = useState([]);

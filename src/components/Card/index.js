@@ -1,8 +1,8 @@
-import { useFavoritoContext } from "context/FavoritosContext";
-import styles from "./Card.module.css";
-import iconeFavoritar from "./favoritar.png";
-import iconeDesfavoritar from "./desfavoritar.png";
 import { Link } from 'react-router-dom';
+import { useFavoritoContext } from 'context/FavoritosContext';
+import styles from './Card.module.css';
+import iconeFavoritar from './favoritar.png';
+import iconeDesfavoritar from './desfavoritar.png';
 
 function Card({ id, titulo, capa }) {
     const { favorito, adicionarFavorito } = useFavoritoContext();
