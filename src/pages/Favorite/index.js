@@ -5,19 +5,21 @@ import Card from 'components/Card';
 import styles from './Favorite.module.css';
 
 function Favoritos() {
-    const { favorito } = useFavoritoContext();
+  const { favorito } = useFavoritoContext();
 
+  return (
     <>
-     <Banner imagem='favoritos' />
-     <Title>
+      <Banner imagem="favoritos" />
+      <Title>
         <h1>Meus Favoritos</h1>
-    </Title>
-    <section className={styles.container}>
+      </Title>
+      <section className={styles.container}>
         {favorito.map((fav) => {
-            return <Card {...fav} key={fav.id} />
+          return <Card {...fav} key={fav.id} />;
         })}
-    </section> 
+      </section>
     </>
+  );
 }
 
 export default Favoritos;
