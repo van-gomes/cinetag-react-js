@@ -6,24 +6,24 @@ import iconeDesfavoritar from './desfavoritar.png';
 
 function Card({ id, titulo, capa }) {
     const { favorito, adicionarFavorito } = useFavoritoContext();
-    const ehFavorito = favorito.includes(id);
-    const icone = !ehFavorito ? iconeFavoritar : iconeDesfavoritar;
-    
+
+    const ehFavorito = favorito.some(item => item.id === id);
+
     return (
         <div className={styles.container}>
             <Link className={styles.link} to={`/${id}`}>
                 <img src={capa} alt={titulo} className={styles.capa} />
                 <h2>{titulo}</h2>
             </Link>
-            <img src={icone}
+
+            <img
+                src={ehFavorito ? iconeFavoritar : iconeDesfavoritar}
                 alt="Favoritar filme"
                 className={styles.favoritar}
-                onClick={() => {
-                    adicionarFavorito({ id, titulo, capa })
-                }} />
+                onClick={() => adicionarFavorito({ id, titulo, capa })}
+            />
         </div>
-
-    )
+    );
 }
 
 export default Card;
